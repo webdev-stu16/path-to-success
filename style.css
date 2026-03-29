@@ -68,7 +68,6 @@ table {
 
 /*GLOBAL STYLES*/
     body {
-        width: 450px;
         margin: auto;
         background-color: var(--primary-bg-color);
         font-family: Inter;
@@ -258,4 +257,12 @@ table {
 
     footer a {
         color: var(--a-text-color);
+    }
+
+    /*MEDIA QUERY*/
+
+    @media only screen and (min-width:767px) {
+        body {
+            max-width: 450px;
+        }
     }
