@@ -1,0 +1,261 @@
+/*CSS BY DANIELLE DE SHAZOR*/
+
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*ROOT VARIABLES*/
+:root {
+    --primary-bg-color: #6B8FE7;
+    --secondary-bg-color: #484FB7;
+    --a-bg-color: #E9BB57;
+    --b-bg-color: #D9526F;
+    --c-bg-color: #4CA7C0;
+    --d-bg-color: #ffffff;
+    --a-text-color: #ffffff;
+    --b-text-color:#E9BB57;
+    --c-text-color: #1E1E1E;
+    --d-text-color: #484FB7;
+
+/*GLOBAL STYLES*/
+    body {
+        width: 450px;
+        margin: auto;
+        background-color: var(--primary-bg-color);
+        font-family: Inter;
+        padding-bottom: 50px;
+    }
+
+    main {
+        background-color: var(--secondary-bg-color);
+    }
+
+    h1, h2 {
+        font-family: Kavoon;
+        color: var(--a-text-color);
+    }
+
+    h1 {
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+
+    nav h2, h3 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        color: var(--a-bg-color);
+        font-weight: bold;
+        padding: 8px 0px;
+    }
+
+    h4 {
+        font-size: 1.15em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: var(--d-text-color);
+
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hdr-text {
+        color: var(--a-text-color);
+        font-size: 12px;
+    }
+
+    nav {
+        background-color: var(--a-bg-color);
+        text-align: center;
+        padding: 15px 20px;
+        text-transform: uppercase;
+    }
+
+    nav h2 {
+        font-family: Inter;
+        font-weight: bold;
+        font-style: italic;
+        color: var(--c-text-color);
+        padding-bottom: 10px;
+    }
+
+    nav ul li {
+        background-color: var(--d-bg-color);
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .card {
+        color: var(--c-text-color);
+        background-color: var(--d-bg-color);
+        padding: 20px;
+        margin: 5px 15px 15px 15px;
+        border-radius: 10px;
+        line-height: 150%;
+    }
+
+    .wcu {
+        background-color: var(--b-bg-color);
+    }
+
+    .wcu ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .wcu ul li {
+        font-weight: bold;
+        padding: 33px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .wcu ul li:first-child {
+        background-color: var(--c-bg-color);
+    }
+
+    .wcu ul li:nth-child(2){
+        background-color: var(--primary-bg-color);
+    }
+
+    .wcu ul li:nth-child(3){
+        background-color: var(--a-bg-color);
+    }
+
+    .wcu ul li:nth-child(4){
+        background-color: var(--d-bg-color);
+    }
+
+    table {
+        background-color: var(--a-bg-color);
+        margin: auto;
+        width: 65%;
+        border: solid 2px var(--a-bg-color);
+    }
+
+    th {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+
+    td {
+        background-color: var(--d-bg-color);
+        padding: 20px;
+        border: solid 2px var(--a-bg-color);
+    }
+
+    .first-step h2 {
+        padding-bottom: 10px;
+    }
+
+    .first-step {
+        background-color: var(--b-bg-color);
+        line-height: 150%;
+        color: var(--a-text-color);
+        padding-bottom: 10px;
+    }
+
+    .first-step p {
+        padding-bottom: 10px;
+    }
+
+    .first-step a {
+        background-color: var(--d-bg-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--c-text-color);
+        text-decoration: none;
+        padding: 20px 40px;
+        display: flex;
+        border-radius: 15px;
+        place-content: center;
+        box-shadow: 5px 5px 5px var(--c-text-color);
+    }
+
+    .button {
+        padding: 0px 20px;
+    }
+
+    footer {
+        font-size: 12px;
+        color: var(--a-text-color);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        text-align: center;
+    }
+
+    footer a {
+        color: var(--a-text-color);
+    }
